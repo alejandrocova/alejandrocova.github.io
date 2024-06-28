@@ -200,30 +200,20 @@ $(function() {
                 type: "POST",
                 url: "https://public.herotofu.com/v1/dbf7e690-352a-11ef-b65d-f35c9518deb4",
                 crossDomain: true,
-                headers: {
-                    "Access-Control-Allow-Origin":"*"
-                },
                 data: $(form).serialize(),
                 beforeSend: function() {
                     $('#submit').html('PLEASE WAIT...')
                     $('.tombol-submit').attr('disabled', 'true');
                     $('input, textarea').attr('readonly', "readonly");
                 },
-                success: function(msg) {
-                    if (msg == 'your message send') {
-                        $('.loader').hide();
-                        $('.alert').show();
-                        FORMS.trigger("reset");
-                        $('#submit').html('<span> SEND ME SOME MESSAGE</span><i class="fa fa-long-arrow-right"></i>')
-                        $('.tombol-submit').removeAttr('disabled');
-                        $('input, textarea').removeAttr('readonly');
-                    } else {
-                        $('.alert').hide();
-                        $('.tombol-submit').removeAttr('disabled');
-                        $('input, textarea').removeAttr('readonly');
-                        $('#submit').html('<span> SEND ME SOME MESSAGE</span><i class="fa fa-long-arrow-right"></i>')
-                        FORMS.trigger("reset");
-                    }
+                complete: function(msg) {
+                    $('.loader').hide();
+                    $('.alert').show();
+                    FORMS.trigger("reset");
+                    $('#submit').html('<span> DROP ME A TEXT</span><i class="fa fa-long-arrow-right"></i>')
+                    $('.tombol-submit').removeAttr('disabled');
+                    $('input, textarea').removeAttr('readonly');
+ 
                 }
             });
             return false;
