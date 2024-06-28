@@ -227,7 +227,6 @@ $(function() {
         slider();
         $('.info-porto').fewlines();
         magnific();
-        $('.embed-youtube').embedVideo();
     })
 
     // Page onload -------
