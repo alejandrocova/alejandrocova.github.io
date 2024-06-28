@@ -556,6 +556,9 @@ _:-ms-fullscreen,
     margin-bottom: 20px;
 }
 
+.word h3{
+    font-size: 1.4rem;
+}
 .word p {
     font-size: 17px;
     width: 85%;
@@ -1670,6 +1673,21 @@ button.owl-next:active {
 @media (max-width: 480px) {
     .word p {
         font-size: 12.5px;
+        width: 300px;
+    }
+    .loadder img {
+        width: 350px;
+    }
+    .right-mini-r {
+        width: 200px;
+    }
+}
+
+@media (max-width: 400px) {
+    .left-mini-r {
+        width: 220px;
+    }
+    .loadder img {
         width: 320px;
     }
 }

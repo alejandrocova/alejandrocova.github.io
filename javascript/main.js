@@ -199,6 +199,10 @@ $(function() {
             $.ajax({
                 type: "POST",
                 url: "https://public.herotofu.com/v1/dbf7e690-352a-11ef-b65d-f35c9518deb4",
+                crossDomain: true,
+                headers: {
+                    "Access-Control-Allow-Origin":"*"
+                },
                 data: $(form).serialize(),
                 beforeSend: function() {
                     $('#submit').html('PLEASE WAIT...')
