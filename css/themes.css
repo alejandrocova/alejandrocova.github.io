@@ -252,7 +252,7 @@ section {
     position: fixed;
     width: 100vw;
     height: 100vh;
-    background: rgba(255, 87, 51, 0.6);
+    background: rgba(0, 70, 128, 0.6);
 
     z-index: -1;
     -webkit-transition: -webkit-transform cubic-bezier(0.77, 0, 0.175, 1) 0.8s;
@@ -264,7 +264,7 @@ section {
 }
 
 .loadder:after {
-    background: rgba(255, 87, 51, 1);
+    background: rgba(0, 70, 128, 1);
     -webkit-transition-delay: 0s;
     transition-delay: 0s;
 }
@@ -472,7 +472,7 @@ body.active .loadder:before {
 */
 
 .info-herowrap {
-    height: 67vh;
+    height: 100vh;
     padding-left: 0;
     padding-right: 0;
 
@@ -508,7 +508,7 @@ body.active .loadder:before {
 
 .swiper-slide {
     text-align: center;
-    height: 800px;
+    height: 600px;
     width: 100% !important;
     font-size: 18px;
     background: #fff;
@@ -946,6 +946,10 @@ button.owl-next:active {
     color: #b1b0b0;
     position: relative;
     float: left;
+}
+
+.left-mini-r p {
+    text-align: justify;
 }
 
 .right-mini-r {
@@ -1639,7 +1643,7 @@ button.owl-next:active {
     }
 
     .left-mini-r {
-        width: 320px;
+        width: 280px;
     }
 
     .right-mini-l {
@@ -1665,8 +1669,8 @@ button.owl-next:active {
 
 @media (max-width: 480px) {
     .word p {
-        font-size: 13px;
-        width: 250px;
+        font-size: 12.5px;
+        width: 320px;
     }
 }
 

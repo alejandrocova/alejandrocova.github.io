@@ -198,7 +198,7 @@ $(function() {
         submitHandler: function(form) {
             $.ajax({
                 type: "POST",
-                url: "https://mailpostexample.herokuapp.com/",
+                url: "https://public.herotofu.com/v1/dbf7e690-352a-11ef-b65d-f35c9518deb4",
                 data: $(form).serialize(),
                 beforeSend: function() {
                     $('#submit').html('PLEASE WAIT...')
